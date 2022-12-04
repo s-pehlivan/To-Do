@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="65" id="KGk-i7-Jjw" customClass="MyCell" customModule="To_Do" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vz1-0V-MpI">
+                        <rect key="frame" x="8" y="8" width="300" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5mD-Rg-vN0">
+                                <rect key="frame" x="6" y="0.0" width="288" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="titleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="CellColor"/>
+                        <constraints>
+                            <constraint firstItem="5mD-Rg-vN0" firstAttribute="leading" secondItem="Vz1-0V-MpI" secondAttribute="leading" constant="6" id="09j-xW-f2u"/>
+                            <constraint firstAttribute="bottom" secondItem="5mD-Rg-vN0" secondAttribute="bottom" id="C2a-mp-pId"/>
+                            <constraint firstItem="5mD-Rg-vN0" firstAttribute="top" secondItem="Vz1-0V-MpI" secondAttribute="top" id="QgT-80-yVb"/>
+                            <constraint firstAttribute="trailing" secondItem="5mD-Rg-vN0" secondAttribute="trailing" constant="6" id="X00-t4-7jr"/>
+                            <constraint firstAttribute="height" constant="45" id="bFE-OD-JT6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Vz1-0V-MpI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IzG-bj-DZx"/>
+                    <constraint firstAttribute="bottom" secondItem="Vz1-0V-MpI" secondAttribute="bottom" constant="8" id="oPg-q1-GO3"/>
+                    <constraint firstAttribute="trailing" secondItem="Vz1-0V-MpI" secondAttribute="trailing" constant="8" id="osW-4T-2JX"/>
+                    <constraint firstItem="Vz1-0V-MpI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xfB-Jz-ATg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="myContainer" destination="Vz1-0V-MpI" id="MAK-e0-ADh"/>
+                <outlet property="titleTextLabel" destination="5mD-Rg-vN0" id="NtE-ht-les"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="116.85267857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CellColor">
+            <color red="0.68900001049041748" green="0.77899998426437378" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="titleColor">
+            <color red="0.17700000107288361" green="0.21799999475479126" blue="0.21799999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
