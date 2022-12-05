@@ -17,9 +17,6 @@ class ToDoTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: K.nibFileName, bundle: nil), forCellReuseIdentifier: K.cellId)
-        
-        items = ["item 1", "item 2"]
-
 
         changeNavBarAppearance()
     }

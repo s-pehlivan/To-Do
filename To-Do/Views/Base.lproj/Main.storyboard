@@ -86,7 +86,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="plus" catalog="system" width="32" height="32"/>
         <namedColor name="Background">
             <color red="0.92900002002716064" green="0.84700000286102295" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

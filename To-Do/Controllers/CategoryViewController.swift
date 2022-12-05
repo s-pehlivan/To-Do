@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CategoryViewController: UITableViewController {
 
-    
-    var categories: [String]?
+    let realm = try! Realm()
+    var categories: Results<Category>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +19,9 @@ class CategoryViewController: UITableViewController {
         tableView.register(UINib(nibName: K.nibFileName, bundle: nil), forCellReuseIdentifier: K.cellId)
         
         navigationItem.backButtonTitle = ""
-        
         changeNavBarAppearance()
         
-        categories = ["number 1", "number 2"]
+        loadData()
        
     }
     
@@ -42,7 +42,10 @@ class CategoryViewController: UITableViewController {
         
         let action = UIAlertAction(title: "Add Category", style: .default) { action in
             // what will happen once the user click the Add Item action on the alert
+            let newCategory = Category()
+            newCategory.name = localTextField.text!
             
+            self.saveData(category: newCategory)
         }
         
         alert.addAction(action)
@@ -72,7 +75,7 @@ extension CategoryViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellId, for: indexPath) as! MyCell
         
-        cell.titleTextLabel.text = categories?[indexPath.row] ?? "No Categories Added Yet."
+        cell.titleTextLabel.text = categories?[indexPath.row].name ?? "No Categories Added Yet."
         
         return cell
     }
@@ -96,9 +99,19 @@ extension CategoryViewController {
 
 extension CategoryViewController {
     func saveData(category: Category) {
+        do {
+            try realm.write({
+                realm.add(category)
+            })
+        }catch {
+            print("Error saving the category \(error)")
+        }
+        tableView.reloadData()
     }
     
     func loadData() {
+        categories = realm.objects(Category.self)
+        tableView.reloadData()
     }
     
 }
