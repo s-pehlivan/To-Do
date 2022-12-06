@@ -19,7 +19,6 @@
 		97A5B197293CD11B005B7492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5B196293CD11B005B7492 /* SceneDelegate.swift */; };
 		97A5B199293CD11B005B7492 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A5B198293CD11B005B7492 /* CategoryViewController.swift */; };
 		97A5B19C293CD11B005B7492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A5B19A293CD11B005B7492 /* Main.storyboard */; };
-		97A5B19F293CD11B005B7492 /* To_Do.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97A5B19D293CD11B005B7492 /* To_Do.xcdatamodeld */; };
 		97A5B1A1293CD11B005B7492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A5B1A0293CD11B005B7492 /* Assets.xcassets */; };
 		97A5B1A4293CD11B005B7492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A5B1A2293CD11B005B7492 /* LaunchScreen.storyboard */; };
 		97E3D41D293E59FA006BA652 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3D41C293E59FA006BA652 /* Category.swift */; };
@@ -38,7 +37,6 @@
 		97A5B196293CD11B005B7492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		97A5B198293CD11B005B7492 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		97A5B19B293CD11B005B7492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		97A5B19E293CD11B005B7492 /* To_Do.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = To_Do.xcdatamodel; sourceTree = "<group>"; };
 		97A5B1A0293CD11B005B7492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97A5B1A3293CD11B005B7492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97A5B1A5293CD11B005B7492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				97A5B1AC293CD12D005B7492 /* Views */,
 				97A5B1AB293CD122005B7492 /* Controllers */,
 				97A5B1A5293CD11B005B7492 /* Info.plist */,
-				97A5B19D293CD11B005B7492 /* To_Do.xcdatamodeld */,
 			);
 			path = "To-Do";
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 				97A5B195293CD11B005B7492 /* AppDelegate.swift in Sources */,
 				97A5B197293CD11B005B7492 /* SceneDelegate.swift in Sources */,
 				97909AA9293CD4000084F856 /* Extensions.swift in Sources */,
-				97A5B19F293CD11B005B7492 /* To_Do.xcdatamodeld in Sources */,
 				97E3D41F293E5A01006BA652 /* Item.swift in Sources */,
 				97909AA6293CD2650084F856 /* MyCell.swift in Sources */,
 				97909AA3293CD2510084F856 /* BaseTableViewCell.swift in Sources */,
@@ -459,19 +455,6 @@
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		97A5B19D293CD11B005B7492 /* To_Do.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				97A5B19E293CD11B005B7492 /* To_Do.xcdatamodel */,
-			);
-			currentVersion = 97A5B19E293CD11B005B7492 /* To_Do.xcdatamodel */;
-			path = To_Do.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 97A5B189293CD11B005B7492 /* Project object */;
 }

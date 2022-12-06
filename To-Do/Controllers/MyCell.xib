@@ -22,12 +22,14 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5mD-Rg-vN0">
                                 <rect key="frame" x="6" y="0.0" width="288" height="45"/>
+                                <color key="tintColor" name="titleColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" name="titleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="CellColor"/>
+                        <color key="tintColor" name="titleColor"/>
                         <constraints>
                             <constraint firstItem="5mD-Rg-vN0" firstAttribute="leading" secondItem="Vz1-0V-MpI" secondAttribute="leading" constant="6" id="09j-xW-f2u"/>
                             <constraint firstAttribute="bottom" secondItem="5mD-Rg-vN0" secondAttribute="bottom" id="C2a-mp-pId"/>
@@ -38,6 +40,7 @@
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" name="titleColor"/>
                 <constraints>
                     <constraint firstItem="Vz1-0V-MpI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IzG-bj-DZx"/>
                     <constraint firstAttribute="bottom" secondItem="Vz1-0V-MpI" secondAttribute="bottom" constant="8" id="oPg-q1-GO3"/>
@@ -47,6 +50,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" name="titleColor"/>
             <connections>
                 <outlet property="myContainer" destination="Vz1-0V-MpI" id="MAK-e0-ADh"/>
                 <outlet property="titleTextLabel" destination="5mD-Rg-vN0" id="NtE-ht-les"/>

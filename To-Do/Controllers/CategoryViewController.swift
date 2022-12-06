@@ -28,6 +28,7 @@ class CategoryViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! ToDoTableViewController
         if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedCategory = categories?[indexPath.row]
         }
         
     }
@@ -89,10 +90,33 @@ extension CategoryViewController {
         performSegue(withIdentifier: K.goToItemsSegue, sender: self)
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
-    
-   
-
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+       
+        let deleteAction = UIContextualAction(style: .destructive, title: "") { action, view, boolValue in
+           
+            if let deletedCategory = self.categories?[indexPath.row] {
+                do {
+                    try self.realm.write{
+                        self.realm.delete(deletedCategory)
+                    }
+                }catch {
+                    print("Error deleting the category: \(error)")
+                }
+            }
+            tableView.reloadData()
+        }
+        
+        deleteAction.backgroundColor = UIColor(named: K.Colors.background)
+        deleteAction.image = UIImage(systemName: "trash")?.withTintColor(UIColor(named: K.Colors.title) ?? .white, renderingMode: .alwaysOriginal)
+        
+        let swipeAction = UISwipeActionsConfiguration(actions: [deleteAction])
+        
+        return swipeAction
+    }
 }
 
 //MARK: - Data Manupulation Methods
