@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		978504D3293E3E81009FAC92 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 978504D2293E3E81009FAC92 /* Realm */; };
 		978504D5293E3E81009FAC92 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 978504D4293E3E81009FAC92 /* RealmSwift */; };
+		978EA4F6293F9876003691C4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 978EA4F5293F9876003691C4 /* README.md */; };
 		97909AA1293CD23D0084F856 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97909AA0293CD23D0084F856 /* ToDoViewController.swift */; };
 		97909AA3293CD2510084F856 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97909AA2293CD2510084F856 /* BaseTableViewCell.swift */; };
 		97909AA6293CD2650084F856 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97909AA4293CD2650084F856 /* MyCell.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		978EA4F5293F9876003691C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		97909AA0293CD23D0084F856 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		97909AA2293CD2510084F856 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		97909AA4293CD2650084F856 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		97A5B188293CD11B005B7492 = {
 			isa = PBXGroup;
 			children = (
+				978EA4F5293F9876003691C4 /* README.md */,
 				97A5B193293CD11B005B7492 /* To-Do */,
 				97A5B192293CD11B005B7492 /* Products */,
 			);
@@ -194,6 +197,7 @@
 			files = (
 				97A5B1A4293CD11B005B7492 /* LaunchScreen.storyboard in Resources */,
 				97909AA7293CD2650084F856 /* MyCell.xib in Resources */,
+				978EA4F6293F9876003691C4 /* README.md in Resources */,
 				97A5B1A1293CD11B005B7492 /* Assets.xcassets in Resources */,
 				97A5B19C293CD11B005B7492 /* Main.storyboard in Resources */,
 			);
