@@ -22,6 +22,7 @@ class ToDoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         tableView.register(UINib(nibName: K.nibFileName, bundle: nil), forCellReuseIdentifier: K.cellId)
 
         changeNavBarAppearance()
@@ -146,10 +147,18 @@ extension ToDoTableViewController {
 extension ToDoTableViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        filterData(predicate: "title CONTAINS[cd] %@", text: searchBar.text!)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-       
+        if searchBar.text?.count == 0 {
+            loadData()
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        } else {
+            filterData(predicate: "title CONTAINS[cd] %@", text: searchBar.text!)
+        }
     }
 }
 
@@ -162,8 +171,9 @@ extension ToDoTableViewController {
         items = selectedCategory?.items.sorted(byKeyPath: "dateCreated", ascending: true)
         tableView.reloadData()
     }
-    func filterData() {
-        
+    func filterData(predicate: String, text: String) {
+        items = items?.filter(predicate, text).sorted(byKeyPath: "dateCreated", ascending: true)
+        tableView.reloadData()
     }
 }
 

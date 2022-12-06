@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		978504D3293E3E81009FAC92 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 978504D2293E3E81009FAC92 /* Realm */; };
 		978504D5293E3E81009FAC92 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 978504D4293E3E81009FAC92 /* RealmSwift */; };
-		97909AA1293CD23D0084F856 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97909AA0293CD23D0084F856 /* ToDoTableViewController.swift */; };
+		97909AA1293CD23D0084F856 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97909AA0293CD23D0084F856 /* ToDoViewController.swift */; };
 		97909AA3293CD2510084F856 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97909AA2293CD2510084F856 /* BaseTableViewCell.swift */; };
 		97909AA6293CD2650084F856 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97909AA4293CD2650084F856 /* MyCell.swift */; };
 		97909AA7293CD2650084F856 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97909AA5293CD2650084F856 /* MyCell.xib */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		97909AA0293CD23D0084F856 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		97909AA0293CD23D0084F856 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		97909AA2293CD2510084F856 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		97909AA4293CD2650084F856 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		97909AA5293CD2650084F856 /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				97A5B198293CD11B005B7492 /* CategoryViewController.swift */,
-				97909AA0293CD23D0084F856 /* ToDoTableViewController.swift */,
+				97909AA0293CD23D0084F856 /* ToDoViewController.swift */,
 				97909AA2293CD2510084F856 /* BaseTableViewCell.swift */,
 				97909AA4293CD2650084F856 /* MyCell.swift */,
 				97909AA5293CD2650084F856 /* MyCell.xib */,
@@ -214,7 +214,7 @@
 				97E3D41F293E5A01006BA652 /* Item.swift in Sources */,
 				97909AA6293CD2650084F856 /* MyCell.swift in Sources */,
 				97909AA3293CD2510084F856 /* BaseTableViewCell.swift in Sources */,
-				97909AA1293CD23D0084F856 /* ToDoTableViewController.swift in Sources */,
+				97909AA1293CD23D0084F856 /* ToDoViewController.swift in Sources */,
 				97909AAB293CD4240084F856 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

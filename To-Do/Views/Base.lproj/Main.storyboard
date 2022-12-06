@@ -40,12 +40,26 @@
         <!--To-Do List-->
         <scene sceneID="icX-en-otU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fr-oP-Ljb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="L1T-iL-rOk" customClass="ToDoTableViewController" customModule="To_Do" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="J1m-bA-LDm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Background"/>
                         <color key="tintColor" name="titleColor"/>
+                        <color key="separatorColor" name="Background"/>
+                        <color key="sectionIndexBackgroundColor" name="Background"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="TFd-JH-iDf">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="CellColor"/>
+                            <color key="tintColor" name="titleColor"/>
+                            <color key="barTintColor" name="CellColor"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="L1T-iL-rOk" id="9BQ-RC-lv5"/>
+                            </connections>
+                        </searchBar>
                         <connections>
                             <outlet property="dataSource" destination="L1T-iL-rOk" id="nh6-jV-XQ2"/>
                             <outlet property="delegate" destination="L1T-iL-rOk" id="rmx-Id-Xym"/>
@@ -60,7 +74,6 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fr-oP-Ljb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1152" y="-231"/>
         </scene>
@@ -91,6 +104,9 @@
         <image name="plus" catalog="system" width="32" height="32"/>
         <namedColor name="Background">
             <color red="0.92900002002716064" green="0.84700000286102295" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="CellColor">
+            <color red="0.68900001049041748" green="0.77899998426437378" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="titleColor">
             <color red="0.17700000107288361" green="0.21799999475479126" blue="0.21799999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
