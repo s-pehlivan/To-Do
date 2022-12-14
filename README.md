@@ -17,6 +17,10 @@
 - Marking to-do items as done by tapping the item
 
 
+## Screenshots
+<img src="images/categories.png" width = "234" height = "506">  <img src="images/toDoItems.png" width = "234" height = "506">  <img src="images/adding.png" width = "234" height = "506">  <img src="images/deleting.png" width = "234" height = "506">
+
+
 ## Setup
 To open this project locally, clone the project and open it in Xcode.
 
